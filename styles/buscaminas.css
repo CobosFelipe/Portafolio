@@ -1,0 +1,27 @@
+.buscaminas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* tamaño del rectangulo */
+  width: 250px;
+  height: 350px;
+  border-radius: 12px;
+  /* color de fondo */
+  background: rgb(179,93,255);
+  background: linear-gradient(0deg, rgba(180,95,255,0.8) 0%, rgb(79, 16, 141, 0.8) 100%);
+  box-sizing: border-box;
+  box-shadow: 5px 5px #4d0087;
+}
+
+.buscaminas > h1 {
+  margin: 5px 2px 1px;
+  height: 25px;
+  color: white;
+}
+
+.buscaminasButtons {
+  background-color: #c17cfd;
+  box-sizing: border-box;
+  box-shadow: 2px 2px #4d0087;
+  color: #fff;
+}

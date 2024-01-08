@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-portfolio-8214838-6562823.png?f=webp" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/calculator.css" />
+    <link rel="stylesheet" href="/styles/buscaminas.css" />
+    <link rel="stylesheet" href="/styles/mediaQueries.css" />
+    <title>Portafolio Manuel Cobos</title>
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <img src="/Img/trademark.png" alt="" height="40px" />
+      <div class="navegacionMobile">
+        <a href="#about"><i class="fa-regular fa-user"></i></a>
+        <a hhref="#experiencias"><i class="fa-solid fa-code"></i></a>
+        <a href="#contacto"><i class="fa-regular fa-address-card"></i></a>
+        <a href="index.html"><i class="fa-solid fa-language"></i></a>
+      </div>
+      <div class="navegacion">
+        <a href="#about"><i class="fa-regular fa-user fa-nav"></i>About</a>
+        <a href="#experiencias"><i class="fa-solid fa-code fa-nav"></i>Experience</a>
+        <a href="#contacto"><i class="fa-regular fa-address-card fa-nav"></i>Contact</a>
+        <a href="index.html"><i class="fa-solid fa-language fa-nav"></i>Spanish</a>
+      </div>
+    </nav>
+    <div class="intro">
+      <h1>Fullstack Java Development Student at Generacion</h1>
+      <h3>Fullstack developer with good level in programming logic</h3>
+      <!-- Aqui ba una imagen -->
+      <img class="dispositivos" src="/Img/3D-desarrollador-web.png" alt="Multiples dispositivos" />
+    </div>
+    <div id="about" class="about">
+      <h2>Hi, I am Manuel</h2>
+      <h3>
+        I am a software development student, I am interested in fullstack development and I am developing my soft and technical skills. Among the technologies I
+        use are:
+      </h3>
+    </div>
+    <div class="contTecnologias">
+      <div class="tecnologia">
+        <h3>HTML</h3>
+        <img class="imgTecnologia" src="/Img/Html.png" alt="logo de HTMl" />
+        <ul>
+          <li>Advanced knowledge in HTML5.</li>
+          <li>Advanced knowledge in the use of labels, semantic and non-semantic.</li>
+          <li>Layout of a website using good practices.</li>
+          <li>Ability to adapt, understand and improve writing in HTML.</li>
+          <!-- nivel de conocimiento -->
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </ul>
+      </div>
+      <div class="tecnologia">
+        <h3>CSS</h3>
+        <img class="imgTecnologia" src="/Img/css.png" alt="logo de CSS" />
+        <ul>
+          <li>Advanced knowledge in CSS 3.</li>
+          <li>Advanced knowledge in the use of different types of selectors.</li>
+          <li>Ability to use good practices in the application of styles with CSS 3.</li>
+          <!-- nivel de conocimiento -->
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </ul>
+      </div>
+      <div class="tecnologia">
+        <h3>JS</h3>
+        <img class="imgTecnologia" src="/Img/Js.png" alt="logo de JS" />
+        <ul>
+          <li>Medium knowledge in JS.</li>
+          <li>Ability to solve simple and medium-difficult logical problems.</li>
+          <li>Self-criticism and constant search for opportunities for improvement at the level of code structure and performance.</li>
+          <!-- nivel de conocimiento -->
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </ul>
+      </div>
+      <div class="tecnologia">
+        <h3>BOOTSTRAP</h3>
+        <img class="imgTecnologia" src="/Img/bootstrap.png" alt="logo de Bootstrap" />
+        <ul>
+          <li>Knowledge of the use of libraries such as bootstrap, import and use of them.</li>
+          <li>Ability to apply changes to boostrap components to further customize elements.</li>
+          <li>Still improving and learning from this library to be able to get the best out of it.</li>
+          <!-- nivel de conocimiento -->
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </ul>
+      </div>
+    </div>
+    <div id="experiencias" class="experiencia">
+      <h2>Recent experiences</h2>
+      <div class="proyectos">
+        <!-- Calculadora -->
+        <div class="calculadora">
+          <h1>Calculator</h1>
+          <div class="display">
+            <input type="text" id="inputNumber" />
+            <!-- <input type="text" id="inputNumber2"> -->
+          </div>
+          <!-- botones -->
+          <div class="table">
+            <table>
+              <tr>
+                <td><button id="btnPorcent" class="operator">%</button></td>
+                <td><button id="btnCE" class="operator">CE</button></td>
+                <td><button id="btnC" class="operator">C</button></td>
+                <td><button id="btnDel" class="operator">DEL</button></td>
+              </tr>
+              <tr>
+                <td><button id="" class="noOperator">--</button></td>
+                <td><button id="" class="noOperator">--</button></td>
+                <td><button id="" class="noOperator">--</button></td>
+                <td><button id="btnDiv" class="operator">/</button></td>
+              </tr>
+              <tr>
+                <td><button id="btn7" class="noOperator">7</button></td>
+                <td><button id="btn8" class="noOperator">8</button></td>
+                <td><button id="btn9" class="noOperator">9</button></td>
+                <td><button id="btnMulti" class="operator">X</button></td>
+              </tr>
+              <tr>
+                <td><button id="btn4" class="noOperator">4</button></td>
+                <td><button id="btn5" class="noOperator">5</button></td>
+                <td><button id="btn6" class="noOperator">6</button></td>
+                <td><button id="btnRest" class="operator">-</button></td>
+              </tr>
+              <tr>
+                <td><button id="btn1" class="noOperator">1</button></td>
+                <td><button id="btn2" class="noOperator">2</button></td>
+                <td><button id="btn3" class="noOperator">3</button></td>
+                <td><button id="btnSum" class="operator">+</button></td>
+              </tr>
+              <tr>
+                <td><button id="" class="operator">--</button></td>
+                <td><button id="btn0" class="noOperator">0</button></td>
+                <td><button id="btnPoint" class="operator">.</button></td>
+                <td><button id="btnEqual" class="operator">=</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- Busca minas -->
+        <div class="buscaminas">
+          <h1>Minesweeper</h1>
+          <form method="dialog">
+            <table align="center">
+              <tr>
+                <td>
+                  <button id="boton_11" class="buscaminasButtons" onclick="Descubrir(1,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_12" class="buscaminasButtons" onclick="Descubrir(1,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_13" class="buscaminasButtons" onclick="Descubrir(1,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_14" class="buscaminasButtons" onclick="Descubrir(1,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_21" class="buscaminasButtons" onclick="Descubrir(2,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_22" class="buscaminasButtons" onclick="Descubrir(2,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_23" class="buscaminasButtons" onclick="Descubrir(2,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_24" class="buscaminasButtons" onclick="Descubrir(2,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_31" class="buscaminasButtons" onclick="Descubrir(3,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_32" class="buscaminasButtons" onclick="Descubrir(3,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_33" class="buscaminasButtons" onclick="Descubrir(3,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_34" class="buscaminasButtons" onclick="Descubrir(3,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_41" class="buscaminasButtons" onclick="Descubrir(4,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_42" class="buscaminasButtons" onclick="Descubrir(4,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_43" class="buscaminasButtons" onclick="Descubrir(4,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_44" class="buscaminasButtons" onclick="Descubrir(4,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_51" class="buscaminasButtons" onclick="Descubrir(5,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_52" class="buscaminasButtons" onclick="Descubrir(5,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_53" class="buscaminasButtons" onclick="Descubrir(5,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_54" class="buscaminasButtons" onclick="Descubrir(5,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_61" class="buscaminasButtons" onclick="Descubrir(6,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_62" class="buscaminasButtons" onclick="Descubrir(6,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_63" class="buscaminasButtons" onclick="Descubrir(6,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_64" class="buscaminasButtons" onclick="Descubrir(6,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="boton_71" class="buscaminasButtons" onclick="Descubrir(7,1,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_72" class="buscaminasButtons" onclick="Descubrir(7,2,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_73" class="buscaminasButtons" onclick="Descubrir(7,3,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+                <td>
+                  <button id="boton_74" class="buscaminasButtons" onclick="Descubrir(7,4,posicionX,posicionY);">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="Hackathon">
+          <a href="https://hackathon-generation-java4.netlify.app/" target="_blank"><img src="/Img/Hackathon.jpg" alt="Imagen de una landingPage" /></a>
+        </div>
+      </div>
+
+      <!-- Una imagen del proyecto de tu landingpage -->
+    </div>
+    <footer id="contacto">
+      <!-- opcional poner un logo o una imagen pequeña que te represente -->
+      <img src="/Img/trademark.png" alt="Logo con el nombre del desarrollador" />
+      <div class="frase">
+        <h3>
+          <em
+            >"Dreams without goals are just dreams; and they will lead you to disappointments. Goals are the path to your dreams; but they cannot be achieved
+            without discipline and consistency" (Denzel Washington)</em
+          >
+        </h3>
+      </div>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-whatsapp fa-nav"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in fa-nav"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope fa-nav"></i></a>
+      </div>
+      <h3>Made by my &copyManuelCobos</h3>
+    </footer>
+    <script src="/js/calculator_v2.js"></script>
+    <script src="/js/buscaminas.js"></script>
+  </body>
+</html>
