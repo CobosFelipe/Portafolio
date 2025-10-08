@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "c51d8836-8dbf-4555-9080-9eb04950e2b0",
+		"name": "YumYum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33120064"
+	},
+	"item": [
+		{
+			"name": "API Users",
+			"item": [
+				{
+					"name": "Agregar usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jane Doe\",\r\n    \"email\": \"Jane-Doe@github.com\",\r\n    \"telephone\": \"6015551234\",\r\n    \"password\": \"P4ssw0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/add",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logear usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mfc@gmail.com\",\r\n    \"password\": \"Sepsis99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Products",
+			"item": [
+				{
+					"name": "Agregar producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_category_id\": 3,\r\n    \"name\": \"Collar de cereza\",\r\n    \"price\": 18500,\r\n    \"description\": \"Collar de cadena con figura de cereza\",\r\n    \"img\": \"https://http2.mlstatic.com/D_NQ_NP_836207-MCO71498904222_092023-O.webp\",\r\n    \"available\": true,\r\n    \"quantity\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/product/add",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar producto",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 1,\r\n    \"fk_category_id\": 2,\r\n    \"name\": \"Manilla de oro\",\r\n    \"price\": 122800,\r\n    \"description\": \"Este es un ejemplo de manilla de oro\",\r\n    \"img\": \"https://oroexpress.com.co/wp-content/uploads/2025/05/A428-0083-0000021391-01_3.jpg?x57642\",\r\n    \"available\": true,\r\n    \"quantity\": 8\r\n}"
+						},
+						"url": {
+							"raw": "{{baseURL}}/product/edit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"product",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Productos por categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/product/category/2/0",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"product",
+								"category",
+								"2",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todos los productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/product/all/20/0",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"product",
+								"all",
+								"20",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Category",
+			"item": [
+				{
+					"name": "Ver categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/category/get",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"category",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Animal lovers\",\r\n    \"img\": \"https://res.cloudinary.com/dopvhkefb/image/upload/v1759120716/Categorias/Animal_lover.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/category/add",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\": 2,\r\n    \"name\": \"Aretes\",\r\n    \"img\": \"https://cdnx.jumpseller.com/iconic/image/49085834/thumb/719/719?1716586444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/category/edit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"category",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/category/delete",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"category",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Banner",
+			"item": [
+				{
+					"name": "Ver imagenes banner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/banner/list",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"banner",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar banner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"link\": \"https://res.cloudinary.com/dopvhkefb/image/upload/v1708040849/Banners/anio-nuevo.webp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/banner/add",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"banner",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://yum-yum-express.onrender.com/",
+			"type": "default"
+		}
+	]
+}

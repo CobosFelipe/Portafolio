@@ -54,9 +54,9 @@ i18n.use(initReactI18next).init({
           Title1: "Featured",
           Title2: "Projects",
           Description: "Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.",
-          DescriptionProyect1: "Online bisutery eccomerce ",
+          DescriptionProyect1: "Online bisutery eccomerce",
           DescriptionProyect2: "Interactive online Pokedex",
-          DescriptionProyect3: "",
+          DescriptionProyect3: "Backend of the bisutery eccomerce",
           Github: "Check My Github",
         },
         Contact: {
@@ -131,7 +131,7 @@ i18n.use(initReactI18next).init({
           Description: "Aquí les presento algunos de mis proyectos recientes. Cada proyecto fue elaborado con esmero, prestando atención al detalle, al rendimiento y a la experiencia del usuario.",
           DescriptionProyect1: "Eccomerce de bisuteria online",
           DescriptionProyect2: "Pokedex interactiva online",
-          DescriptionProyect3: "",
+          DescriptionProyect3: "Backend del eccomerce de bisuteria",
           Github: "Revisa mi Github",
         },
         Contact: {

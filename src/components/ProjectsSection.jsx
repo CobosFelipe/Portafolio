@@ -21,7 +21,9 @@ export const ProjectsSection = () => {
           {/* Image */},
           <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
             <div className="h-48 overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <a href={project.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </a>
             </div>
             {/* Tags */}
             <div className="p-6">
@@ -35,11 +37,13 @@ export const ProjectsSection = () => {
               {/* Info */}
               <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
               <p className="text-muted-foreground text-sm mb-4">{t(`Proyects.${project.description}`)}</p>
-              <div className="flex justify-between items-center">
+              <div className="flex gap-5 items-center">
                 <div className="flex space-x-3">
                   <a href={project.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                     <Link size={20} />
                   </a>
+                </div>
+                <div className="flex space-x-3">
                   <a href={project.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                     <Github size={20} />
                   </a>
